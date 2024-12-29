@@ -1,0 +1,11 @@
+<resources>
+    <color name="black">#FFFFFFFF</color> <!-- Invert black to white for dark mode -->
+    <color name="white">#FF000000</color> <!-- Invert white to black for dark mode -->
+    <color name="red">#FF8B8B</color> <!-- Softer red for dark mode -->
+    <color name="green">#80C080</color> <!-- Softer green for dark mode -->
+    <color name="purple_500">#BB86FC</color> <!-- Lighter purple -->
+    <color name="gray">#3C3C3C</color> <!-- Darker gray -->
+    <color name="alabaster">#121212</color> <!-- Dark mode background -->
+    <color name="itemTitleColor">#74FF74</color> <!-- Softer green for titles -->
+    <color name="dividerColor">#333333</color> <!-- Darker divider color for dark mode -->
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/alabaster"> <!-- Background color will change based on mode -->
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="302dp"
+        android:layout_height="272dp"
+        android:layout_gravity="center|top"
+        android:src="@drawable/ambu_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/paramedicsBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PARAMEDICS"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/hospitalBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="HOSPITAL"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

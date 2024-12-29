@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "340313922203",
+    "project_id": "ambulink-428904",
+    "storage_bucket": "ambulink-428904.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340313922203:android:6846a4b106f65f194a043e",
+        "android_client_info": {
+          "package_name": "com.example.ambulink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340313922203-9pluqc20hiegqdcmlbicvf5basrcnpi1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ambulink",
+            "certificate_hash": "c2c09fdeed3e5e8429f537308e825061545d98b0"
+          }
+        },
+        {
+          "client_id": "340313922203-hvj64k8800fr90ov39n6dme5hlcg3lor.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ambulink",
+            "certificate_hash": "62eff3638a457296adbf883a80dacb8c257bf3db"
+          }
+        },
+        {
+          "client_id": "340313922203-ov627838uhk4j4mfqieghkg6ql15m95l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ambulink",
+            "certificate_hash": "8d5019a0159e525d9ca227aca876fef94cc41f4b"
+          }
+        },
+        {
+          "client_id": "340313922203-h83ki9rnv2gn79heq7p9ls3jrqimha33.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "<?>"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340313922203-h83ki9rnv2gn79heq7p9ls3jrqimha33.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hospital_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_background"
+    android:layout_marginBottom="8dp">
+
+
+    <TextView
+        android:id="@+id/tvHospitalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital Name"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:textColor="@color/itemTitleColor"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:id="@+id/hospital_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hospital Type"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tvAvailableSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Slot"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvDoctorsAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctors Available"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvNursesAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nurses Available"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="23sp"
+            android:src="@drawable/clock"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:id="@+id/tvETA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETA"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="23sp"
+            android:src="@drawable/location"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hospital Address"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginEnd="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/acceptanceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acceptance Status"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/hospitalStaff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff Name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/rejectionReason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejection Reason"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnChooseHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Hospital"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:layout_marginRight="16dp"/>
+
+        <Button
+            android:id="@+id/btnNavigate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Navigate"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/dividerColor"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

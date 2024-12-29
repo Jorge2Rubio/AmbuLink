@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/scrollView">
+
+    <LinearLayout
+        android:id="@+id/linearParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/alabaster">
+
+        <!-- Logo and Title -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ambu_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Patient Status"
+            android:textSize="30sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_bold" />
+
+        <!-- Patient Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="Name:"
+            android:textSize="18sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginStart="18sp"
+            android:layout_marginBottom="5sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensans_regular" />
+
+        <EditText
+            android:id="@+id/pFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="First Name"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="18sp"
+            android:background="@drawable/input_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginBottom="10sp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/pLastName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:background="@drawable/input_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Last Name"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/ageLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age:"
+                android:textSize="18sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/sexLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="150sp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Sex:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:layout_marginBottom="10dp">
+
+            <EditText
+                android:id="@+id/ageInput"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:hint="Age"
+                android:textSize="15sp"
+                android:background="@drawable/input_text_background"
+                android:fontFamily="@font/poppins_regular"
+                android:textColorHint="@color/black"
+                android:layout_centerVertical="true" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/sexLabelInput"-->
+            <!--                android:layout_width="180sp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:hint="M OR F"-->
+            <!--                android:textSize="15sp"-->
+            <!--                android:inputType="textCapWords"-->
+            <!--                android:background="@drawable/input_text_background"-->
+            <!--                android:fontFamily="@font/poppins_regular"-->
+            <!--                android:textColorHint="@color/black"-->
+            <!--                android:layout_marginEnd="5sp"-->
+            <!--                android:layout_marginStart="10sp"-->
+            <!--                android:layout_toRightOf="@+id/ageInput"-->
+            <!--                android:layout_centerVertical="true" />-->
+
+            <Spinner
+                android:id="@+id/spinnerSex"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:layout_marginStart="10sp"
+                android:layout_toRightOf="@+id/ageInput"
+                android:background="@drawable/input_text_background"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religion:"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="18sp"
+            />
+
+        <EditText
+            android:id="@+id/pReligion"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/input_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:inputType="textCapWords"
+            android:hint="Religion"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chief Complaint: "
+            android:layout_marginTop="10sp"
+            android:layout_marginEnd="5sp"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="18sp"
+            />
+
+        <EditText
+            android:id="@+id/pComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginStart="18sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/input_text_background"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Complaint"
+            android:inputType="textCapWords"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:textColorHint="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample History: "
+            android:textSize="18sp"
+            android:layout_marginStart="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="15sp"/>
+
+        <EditText
+            android:id="@+id/pSigns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Signs and Symptoms"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pAllergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pMedications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medications"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pPastMed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Past Medical History"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pLastOralI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Oral Intake"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pEventsLeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Events leading to present illness"
+            android:background="@drawable/input_text_background"
+            android:inputType="textCapWords"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vital Signs: "
+            android:textSize="18sp"
+            android:layout_marginStart="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="15sp"/>
+
+        <EditText
+            android:id="@+id/pOxygenSatur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Oxygen Saturation (SP02)"
+            android:background="@drawable/input_text_background"
+            android:inputType="number"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pRespiratoryRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Respiratory Rate"
+            android:background="@drawable/input_text_background"
+            android:inputType="number"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pHeartRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Heart Rate / Pulse Rate"
+            android:background="@drawable/input_text_background"
+            android:inputType="number"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pBodyTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Body Temperature"
+            android:background="@drawable/input_text_background"
+            android:inputType="numberDecimal"
+            android:layout_marginStart="18sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginEnd="20sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <EditText
+            android:id="@+id/pBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Blood Pressure"
+            android:background="@drawable/input_text_background"
+            android:inputType="number"
+            android:layout_marginStart="18sp"
+            android:layout_marginEnd="20sp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="15sp"
+            android:textColorHint="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notes: "
+                android:textSize="20sp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:layout_marginTop="15sp"/>
+
+            <Button
+                android:id="@+id/addNotes"
+                android:layout_width="80sp"
+                android:layout_height="40sp"
+                android:padding="0sp"
+                android:text="Add"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginEnd="20sp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:backgroundTint="@color/gray"/>
+
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/pSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="25sp"
+
+            android:background="@null"
+            android:backgroundTint="@color/gray"
+            android:text="Submit"
+            android:padding="0sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="50sp"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

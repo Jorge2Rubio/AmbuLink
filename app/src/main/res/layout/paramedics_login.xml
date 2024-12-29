@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/paramedics_login"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins_family"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Login"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="28dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(Paramedics)"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="28dp"
+
+            android:textColor="@color/black"
+            />
+
+        <EditText
+            android:id="@+id/paramedics_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="50dp"/>
+
+        <EditText
+            android:id="@+id/paramedics_password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColorHint="@color/black"
+            android:hint="Password"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:id="@+id/forgotPasswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensans_regular"
+            />
+        <Button
+            android:id="@+id/paramLoginBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/gray"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <Button
+            android:id="@+id/paramRegBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"/>
+
+    </LinearLayout>
+</LinearLayout>

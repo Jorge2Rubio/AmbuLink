@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/backBtnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins_family"
+        android:text="BACK"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Registration"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_family"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="(Hospital)"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_family"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/hospitalFullName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:textColor="@color/black"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="30dp"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/hospitalEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColorHint="@color/black"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/hospitalPassWord"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@color/black"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/black"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/opensans_regular"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/hospitalPhone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="+63"
+            android:textColor="@color/black"
+            android:background="@drawable/search_background"
+            android:paddingLeft="25dp"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <Spinner
+            android:id="@+id/spinnerHospital"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_background"
+        />
+
+
+        <Button
+            android:id="@+id/hospitalRegSubmit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/gray"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

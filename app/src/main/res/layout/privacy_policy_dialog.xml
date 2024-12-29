@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/privacyPolicyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy Consent\n\nBy using the AmbuLink application, I acknowledge that I have read and understood the Privacy Policy and consent to the collection, use, and processing of my personal data as described. I am aware of my rights under the Data Privacy Act of 2012, including the right to access, correct, or delete my data and the right to withdraw my consent at any time."
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/acceptCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I accept the terms and conditions."/>
+    </LinearLayout>
+</ScrollView>

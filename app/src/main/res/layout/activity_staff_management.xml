@@ -1,0 +1,279 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BACK"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins_family"/>
+        </LinearLayout>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hospital Staff Management"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_family"
+            android:paddingBottom="16dp" />
+
+        <!-- Doctors Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctors"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_family"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Available Doctors: 0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etNumDoctors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Number of Doctors"
+                android:singleLine="true"
+                android:inputType="number"
+                android:background="@drawable/input_text_background" />
+
+            <Button
+                android:id="@+id/btnIncreaseDoctors"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="10sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseDoctors"
+                android:layout_width="80dp"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPlaceHolderDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Edit Maximum Doctors:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etMaxDoctors"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:hint="Number of Maximum Doctors"
+                android:inputType="number"
+                android:background="@drawable/input_text_background" />
+
+            <Button
+                android:id="@+id/btnIncreaseMaxDoctors"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="10sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseMaxDoctors"
+                android:layout_width="80dp"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <!-- Nurses Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nurses"
+            android:layout_marginTop="10sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_family"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCurrentNurses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Available Nurses: 0" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etNumNurses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Number of Nurses"
+                android:singleLine="true"
+                android:inputType="number"
+                android:background="@drawable/input_text_background" />
+
+
+            <Button
+                android:id="@+id/btnIncreaseNurses"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="10sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseNurses"
+                android:layout_width="80dp"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPlaceHolderNurse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Edit Maximum Nurse:" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etMaxNurses"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Number of Maximum Nurses"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/input_text_background" />
+
+
+            <Button
+                android:id="@+id/btnIncreaseMaxNurses"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="10sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseMaxNurses"
+                android:layout_width="80dp"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+        <!-- Slots Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Slots"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_family"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMaxSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maximum Slots: 0"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/etMaxSlots"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Number of Slots"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/input_text_background" />
+
+
+            <Button
+                android:id="@+id/btnIncreaseSlots"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_marginLeft="10sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseSlots"
+                android:layout_width="80dp"
+                android:layout_margin="5sp"
+                android:layout_height="wrap_content"
+                android:text="-" />
+
+        </LinearLayout>
+
+        <!-- Save Changes Button -->
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Changes"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp" />
+    </LinearLayout>
+</ScrollView>

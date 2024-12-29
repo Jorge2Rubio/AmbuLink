@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hospital_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/item_background"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/tvSenderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sender Name"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:textColor="@color/itemTitleColor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="6dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="23sp"
+            android:src="@drawable/clock"
+            android:layout_marginStart="18dp"/>
+
+        <TextView
+            android:id="@+id/tvETA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ETA"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginLeft="10dp"/>
+
+        <!-- Dot TextView -->
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="•"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="23sp"
+            android:src="@drawable/location"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginEnd="16dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="#e3f5e7" />
+
+
+</LinearLayout>

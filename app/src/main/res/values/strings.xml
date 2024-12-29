@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">AmbuLink</string>
+
+    <!-- General Error Messages -->
+    <string name="error_registration_failed">Registration failed. Please try again.</string>
+
+    <!-- Specific Firebase Authentication Error Messages -->
+    <string name="error_invalid_email">The email address is badly formatted.</string>
+    <string name="error_wrong_password">The password is invalid or the user does not have a password.</string>
+    <string name="error_email_already_in_use">The email address is already in use by another account.</string>
+    <string name="error_weak_password">The password is too weak. It must be at least 6 characters long.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="sex">
+        <item>M</item>
+        <item>F</item>
+    </string-array>
+
+    <!-- Array of hospital names -->
+    <string-array name="hospital_names">
+        <item>Barangay San Antonio Health Center</item>
+        <item>Mercedes de Joya Health Center</item>
+        <!-- Add more hospitals as needed -->
+    </string-array>
+
+    <!-- Array of corresponding hospital IDs -->
+    <string-array name="hospital_ids">
+        <item>1</item>
+        <item>2</item>
+        <!-- Add matching IDs for each hospital name -->
+    </string-array>
+
+    <string-array name="religions">
+        <item>Roman Catholic </item>
+        <item>Iglesia ni Cristo</item>
+        <item>Islam</item>
+        <item>Christian</item>
+        <item>Aglipayan Church</item>
+        <item>Jehovah’s Witnesses</item>
+        <item>Buddhism</item>
+        <item>Hinduism</item>
+        <item>Judaism</item>
+        <item>Others</item>
+    </string-array>
+
+</resources>

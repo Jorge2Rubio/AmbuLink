@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"
+        android:background="@drawable/input_text_background"
+        android:fontFamily="@font/poppins_regular"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:inputType="text"
+        android:drawableEnd="@android:drawable/ic_btn_speak_now"/>
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:layout_marginTop="5sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Remove" />
+
+</LinearLayout>

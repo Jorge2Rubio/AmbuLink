@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginStart="15sp">
+
+        <TextView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/poppins_family"/>
+
+        <TextView
+            android:id="@+id/patient_title_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Details"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            android:layout_marginBottom="40sp"/>
+
+        <TextView
+            android:id="@+id/patient_name_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_first_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/patient_last_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15sp">
+
+
+            <TextView
+                android:id="@+id/patient_age_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: "
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/patient_age_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+
+            <TextView
+                android:id="@+id/patient_sex_holder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex: "
+                android:textSize="18sp"
+                android:layout_marginStart="150sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/patient_sex_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sex"
+                android:textSize="18sp"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/patient_religion_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religion: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_religion_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Religion"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+
+        <TextView
+            android:id="@+id/patient_compliant_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chief Complaint: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_complaint_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chief Complaint"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_sampleHistory_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Sample History: "
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_signsAndSymptoms_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signs and Symptoms: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_signsAndSymptoms_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signs and Symptoms: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"
+            />
+
+        <TextView
+            android:id="@+id/patient_allergies_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_allergies_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_medications_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medications: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_medications_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medications: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_pastMedicalHistory_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Medical History: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_pastMedicalHistory_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Past Medical History: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_lastOralIntake_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Oral Intake: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_lastOralIntake_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Oral Intake: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_eventsLeadingToPresentIllness_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events leading to present illness: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_eventsLeadingToPresentIllness_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events leading to present illness: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_VitalSigns_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vital Signs: "
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_OxygenSaturation_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxygen Saturation(SP02): "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+           />
+
+        <TextView
+            android:id="@+id/patient_OxygenSaturation_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oxygen Saturation: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_RespiratoryRate_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respiratory Rate: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/patient_RespiratoryRate_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respiratory Rate: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_HeartRate_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_HeartRate_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+
+
+        <TextView
+            android:id="@+id/patient_BodyTemperature_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Temperature: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_BodyTemperature_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Body Temperature: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+        <TextView
+            android:id="@+id/patient_BloodPressure_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_BloodPressure_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Pressure: "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+
+        <TextView
+            android:id="@+id/patient_Notes_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/patient_Notes_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notes "
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+
+        <TextView
+            android:id="@+id/rejection_reason_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rejection Reason: "
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/rejection_reason_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N/A"
+            android:textSize="18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="15sp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp">
+
+            <Button
+                android:id="@+id/patientAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept"
+                android:layout_marginEnd="50sp"/>
+
+            <Button
+                android:id="@+id/patientReject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reject"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
