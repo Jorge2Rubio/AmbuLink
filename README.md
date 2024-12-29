@@ -1,6 +1,6 @@
 # AmbuLink
 
-Abstract—The AmbuLink project addresses
+The AmbuLink project addresses
 inefficiencies in emergency medical services
 (EMS) in the Philippines, including lack of
 real-time hospital bed availability, suboptimal
